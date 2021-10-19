@@ -20,6 +20,16 @@ define(['jquery', 'iscroll', 'snap', 'fastclick', 'domReady'], function($, IScro
   FastClick.attach(document.body);
 
   var snapper = new Snap({
+     $('img').load(function() {
+    myScroll.refresh();
+  });
+ $('img').load(function() {
+    myScroll.refresh();
+  });
+ $('img').load(function() {
+    myScroll.refresh();
+  });
+
     element: document.getElementById('content'),
     disable: 'right',
     tapToClose: true,
